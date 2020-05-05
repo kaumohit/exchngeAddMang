@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "logs/.646e262ce160ac8b6a62d9bb907c69a4a049742a-audit.json",
+    "files": [
+        {
+            "date": 1561374752156,
+            "name": "logs/LEX-LOG-2019-06-24.log",
+            "hash": "c0b769c2fc4e83abc06f0c0e9115b756"
+        }
+    ]
+}

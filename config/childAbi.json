@@ -1,0 +1,187 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "drainTokens20",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "drainEthersManually",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			},
+			{
+				"name": "_data",
+				"type": "bytes32"
+			}
+		],
+		"name": "tokenFallback",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "drainTokens223",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getEtherBalance",
+		"outputs": [
+			{
+				"name": "balance",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "masterContrAddr",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "totalBalance",
+				"type": "uint256"
+			}
+		],
+		"name": "EtherDeposited",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "totalBalance",
+				"type": "uint256"
+			}
+		],
+		"name": "TokenDrained",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "totalBalance",
+				"type": "uint256"
+			}
+		],
+		"name": "EtherDrained",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "AccountCreated",
+		"type": "event"
+	}
+]
